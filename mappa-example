@@ -17,7 +17,7 @@ const mappa = new Mappa('Leaflet');
 const options = {
   lat: 49.265637,
   lng: -123.256113,
-  zoom: 15,
+  zoom: 10,
   style: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
 }
 
