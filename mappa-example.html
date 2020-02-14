@@ -30,6 +30,7 @@ function setup(){
   // Load the data
   meteorites = loadTable('./Meteorite_Landings.csv', 'csv', 'header');
   console.log(meteorites.getRowCount());
+  console.log(meteorites);
 
   // Only redraw the meteorites when the map change and not every frame.
   myMap.onChange(drawMeteorites);
