@@ -50,8 +50,11 @@ function drawMeteorites() {
 	
   for (let i = 0; i < meteorites.getRowCount(); i++) {
     // Get the lat/lng of each meteorite 
+    console.log('this far 1');
     const latitude = Number(meteorites.getString(i, 'reclat'));
+	    console.log('this far 2');
     const longitude = Number(meteorites.getString(i, 'reclong'));
+	    console.log('this far 3');
 
     // Only draw them if the position is inside the current map bounds. We use a
     // Leaflet method to check if the lat and lng are contain inside the current
