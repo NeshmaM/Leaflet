@@ -43,7 +43,8 @@ function draw(){
 function drawMeteorites() {
   // Clear the canvas
   clear();
-
+  console.log(meteorites.getRowCount());
+	
   for (let i = 0; i < meteorites.getRowCount(); i++) {
     // Get the lat/lng of each meteorite 
     const latitude = Number(meteorites.getString(i, 'reclat'));
